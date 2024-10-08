@@ -23,8 +23,12 @@ function BridgePage() {
             // iOS 사용자일 경우 딥링크를 시도하고, 앱 스토어로 리다이렉트
             const iframe = document.createElement("iframe");
             iframe.style.display = "none";
-            //   iframe.src = "fashionandstyle://";
-            iframe.src = "https://www.fashionandstyle.com";
+            iframe.src = "fashionandstyle://";
+            // iframe.src = "https://www.fashionandstyle.com";
+            window.setTimeout(() => {
+                document.body.removeChild(iframe);
+            }, 1000);
+
             alert(1);
             //window.open("https://www.fashionandstyle.com", "_blank");
             window.location.replace('fashionandstyle://');
