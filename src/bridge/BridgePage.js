@@ -42,10 +42,14 @@ function BridgePage() {
 
             alert(4);
             window.location.replace('https://www.fashionandstyle.com');
-            //alert(2);
-            //window.location.href = "https://www.fashionandstyle.com";
 
             alert(5);
+            window.location.href = "fashionandstyle://";
+
+            alert(6);
+            window.location.href = "https://www.fashionandstyle.com";
+
+            alert(7);
             const link = document.getElementById("moveToAPP");
             alert(link.href);
             link.click();
