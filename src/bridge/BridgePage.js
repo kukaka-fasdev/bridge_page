@@ -26,12 +26,13 @@ function BridgePage() {
             //   iframe.src = "fashionandstyle://";
             iframe.src = "https://www.fashionandstyle.com";
             alert(1);
-            window.open("https://fashionandstyle.page.link/home", "_blank");
+            window.open("https://www.fashionandstyle.com", "_blank");
 
-            alert(2);
+            //alert(2);
             //window.location.href = "https://www.fashionandstyle.com";
             document.body.appendChild(iframe);
             setTimeout(() => {
+                alert(2);
                 window.location = "https://apps.apple.com/app/id1620312420";
                 //window.location = "https://www.fashionandstyle.com";
             }, 2000);
