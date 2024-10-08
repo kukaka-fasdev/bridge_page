@@ -34,9 +34,12 @@ function BridgePage() {
             window.open("https://www.fashionandstyle.com", "_blank");
 
             alert(2);
-            window.location.replace('fashionandstyle://');
+            window.open('fashionandstyle://', "_blank");
 
             alert(3);
+            window.location.replace('fashionandstyle://');
+
+            alert(4);
             window.location.replace('https://www.fashionandstyle.com');
             //alert(2);
             //window.location.href = "https://www.fashionandstyle.com";
