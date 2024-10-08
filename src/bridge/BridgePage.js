@@ -55,7 +55,7 @@ function BridgePage() {
             // link.click();
 
             const link = document.createElement('a');
-            link.href = 'https://www.example.com';
+            link.href = 'https://www.fashionandstyle.com';
             link.target = '_blank';
             link.rel = 'noreferrer noopener';
 
