@@ -31,10 +31,12 @@ function BridgePage() {
             }, 1000);
 
             alert(1);
-            //window.open("https://www.fashionandstyle.com", "_blank");
-            window.location.replace('fashionandstyle://');
+            window.open("https://www.fashionandstyle.com", "_blank");
 
             alert(2);
+            window.location.replace('fashionandstyle://');
+
+            alert(3);
             window.location.replace('https://www.fashionandstyle.com');
             //alert(2);
             //window.location.href = "https://www.fashionandstyle.com";
