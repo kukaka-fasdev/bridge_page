@@ -55,7 +55,7 @@ function BridgePage() {
             // link.click();
 
             const link = document.createElement('a');
-            link.href = 'https://www.fashionandstyle.com';
+            link.href = 'fashionandstyle://';
             link.target = '_blank';
             link.rel = 'noreferrer noopener';
 
@@ -68,11 +68,11 @@ function BridgePage() {
                 // 클릭 시 실행될 추가적인 로직
             });
 
-            setTimeout(() => {
-                alert(10);
-                window.location = "https://apps.apple.com/app/id1620312420";
-                //window.location = "https://www.fashionandstyle.com";
-            }, 2000);
+            // setTimeout(() => {
+            //     alert(10);
+            //     window.location = "https://apps.apple.com/app/id1620312420";
+            //     //window.location = "https://www.fashionandstyle.com";
+            // }, 2000);
         }
 
         // 클린업 함수 (선택 사항)
