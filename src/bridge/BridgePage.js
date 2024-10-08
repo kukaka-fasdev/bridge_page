@@ -73,7 +73,7 @@ function BridgePage() {
                 </h1>
                 <p>잠시 후 앱으로 이동합니다. 이동되지 않으면 앱 스토어에서 설치해주세요.</p>
                 <div>
-                    <a id="moveToAPP" href="https://www.fashionandstyle.com" target="_blank">앱에서 열기</a>
+                    <a id="moveToAPP" href="https://www.fashionandstyle.com" target="_blank" rel="noreferrer noopener">앱에서 열기</a>
                     <p>또는</p>
                     <a href="https://apps.apple.com/app/id1620312420">앱스토어에서 설치</a>
                 </div>
