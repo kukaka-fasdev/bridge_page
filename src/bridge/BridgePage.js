@@ -52,7 +52,27 @@ function BridgePage() {
             alert(7);
             const link = document.getElementById("moveToAPP");
             alert(link.href);
-            link.click();
+            // link.click();
+
+            // const link = document.createElement('a');
+            // link.href = 'https://www.fashionandstyle.com';
+            // link.target = '_blank';
+            // link.rel = 'noreferrer noopener';
+            //
+            // link.text = '새로운 탭에서 열기';
+            //
+            // document.body.appendChild(link);
+
+            // 클릭 이벤트 추가 (선택 사항)
+            link.addEventListener('click', () => {
+                // 클릭 시 실행될 추가적인 로직
+            });
+
+            // 클린업 함수 (선택 사항)
+            return () => {
+                document.body.removeChild(link);
+            };
+
 
             setTimeout(() => {
                 alert(10);
