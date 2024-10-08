@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from 'react-helmet';
 
 function BridgePage() {
 
@@ -48,6 +49,9 @@ function BridgePage() {
 
     return(
         <>
+            <Helmet>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Helmet>
             <div>
                 <h1>
                     브릿지 페이지 입니다.
