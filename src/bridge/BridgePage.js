@@ -48,6 +48,7 @@ function BridgePage() {
             alert(5);
             const link = document.getElementById("moveToAPP");
             alert(link.href);
+            link.click();
 
             setTimeout(() => {
                 alert(10);
