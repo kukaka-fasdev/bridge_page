@@ -25,11 +25,15 @@ function BridgePage() {
             iframe.style.display = "none";
             //   iframe.src = "fashionandstyle://";
             iframe.src = "https://www.fashionandstyle.com";
+            alert(1);
+            window.open("https://fashionandstyle.page.link/home", "_blank");
+
+            alert(2);
             //window.location.href = "https://www.fashionandstyle.com";
             document.body.appendChild(iframe);
             setTimeout(() => {
-                //window.location = "https://apps.apple.com/app/id1620312420";
-                window.location = "https://www.fashionandstyle.com";
+                window.location = "https://apps.apple.com/app/id1620312420";
+                //window.location = "https://www.fashionandstyle.com";
             }, 2000);
         }
     }, []);
