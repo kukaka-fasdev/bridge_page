@@ -24,8 +24,9 @@ function BridgePage() {
             // iOS 사용자일 경우 딥링크를 시도하고, 앱 스토어로 리다이렉트
             const iframe = document.createElement("iframe");
             iframe.style.display = "none";
-            iframe.src = "fashionandstyle://";
-            // iframe.src = "https://www.fashionandstyle.com";
+            //iframe.src = "fashionandstyle://";
+            iframe.src = "https://www.fashionandstyle.com";
+            document.body.appendChild(iframe);
             window.setTimeout(() => {
                 document.body.removeChild(iframe);
             }, 1000);
@@ -43,7 +44,11 @@ function BridgePage() {
             window.location.replace('https://www.fashionandstyle.com');
             //alert(2);
             //window.location.href = "https://www.fashionandstyle.com";
-            document.body.appendChild(iframe);
+
+            alert(5);
+            const link = document.getElementById("moveToAPP");
+            alert(link.href);
+
             setTimeout(() => {
                 alert(10);
                 window.location = "https://apps.apple.com/app/id1620312420";
@@ -63,7 +68,7 @@ function BridgePage() {
                 </h1>
                 <p>잠시 후 앱으로 이동합니다. 이동되지 않으면 앱 스토어에서 설치해주세요.</p>
                 <div>
-                    <a href="https://www.fashionandstyle.com">앱에서 열기</a>
+                    <a id="moveToAPP" href="https://www.fashionandstyle.com">앱에서 열기</a>
                     <p>또는</p>
                     <a href="https://apps.apple.com/app/id1620312420">앱스토어에서 설치</a>
                 </div>
