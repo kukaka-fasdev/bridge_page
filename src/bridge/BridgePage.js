@@ -27,7 +27,7 @@ function BridgePage() {
             const url = window.location.href.replace("https://www.fashionandstyle.com", "fashionandstyle://")
 
             alert(url);
-            window.location = "https://www.fashionandstyle.com";
+            window.location = "fashionandstyle://";
 
             setTimeout(function () {
                 // wait a second and then to go App Store or your Website
