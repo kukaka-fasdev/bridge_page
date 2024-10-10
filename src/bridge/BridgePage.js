@@ -55,7 +55,7 @@ function BridgePage() {
             // link.click();
 
             const link = document.createElement('a');
-            link.href = 'fashionandstyle://';
+            link.href = 'https://www.fashionandstyle.com';
             link.target = '_blank';
             link.rel = 'noreferrer noopener';
 
@@ -79,6 +79,27 @@ function BridgePage() {
         // return () => {
         //     document.body.removeChild(link);
         // };
+
+        const handleLoad = () => {
+            // 페이지 로드가 완료된 후 실행될 코드
+            alert(10);
+
+            const link = document.createElement('a');
+            link.href = 'https://www.fashionandstyle.com';
+            link.target = '_blank';
+            link.rel = 'noreferrer noopener';
+
+            link.text = '새로운 탭에서 열기';
+
+            document.body.appendChild(link);
+
+        };
+
+        window.addEventListener('load', handleLoad);
+
+        // Clean-up 함수: 컴포넌트가 언마운트될 때 이벤트 리스너를 제거
+        return () => window.removeEventListener('load', handleLoad);
+
     }, []);
 
     return(
@@ -94,7 +115,7 @@ function BridgePage() {
                 </h1>
                 <p>잠시 후 앱으로 이동합니다. 이동되지 않으면 앱 스토어에서 설치해주세요.</p>
                 <div>
-                    <a id="moveToAPP" href="https://www.fashionandstyle.com" target="_blank" rel="noreferrer noopener">앱에서 열기</a>
+                    <a id="moveToAPP" href="https://www.fashionandstyle.com" target="_blank" rel="noopener noreferrer">앱에서 열기</a>
                     <p>또는</p>
                     <a href="https://apps.apple.com/app/id1620312420">앱스토어에서 설치</a>
                 </div>
