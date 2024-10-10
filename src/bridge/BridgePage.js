@@ -93,7 +93,7 @@ function BridgePage() {
         //     document.body.removeChild(link);
         // };
 
-        const handleLoad = () => {
+        // const handleLoad = () => {
             // 페이지 로드가 완료된 후 실행될 코드
             // alert(10);
             //
@@ -120,7 +120,7 @@ function BridgePage() {
             //     }, 1000);
             // }
 
-        };
+        // };
 
         // window.addEventListener('load', handleLoad);
         //
