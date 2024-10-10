@@ -86,7 +86,7 @@ function BridgePage() {
 
             const link = document.createElement('a');
             link.href = 'https://www.fashionandstyle.com';
-            link.target = '_blank';
+            link.target = '_self';
             link.rel = 'noreferrer noopener';
 
             link.text = '새로운 탭에서 열기';
@@ -100,7 +100,7 @@ function BridgePage() {
         window.addEventListener('load', handleLoad);
 
         // Clean-up 함수: 컴포넌트가 언마운트될 때 이벤트 리스너를 제거
-        //return () => window.removeEventListener('load', handleLoad);
+        return () => window.removeEventListener('load', handleLoad);
 
     }, []);
 
