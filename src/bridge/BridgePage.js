@@ -22,17 +22,19 @@ function BridgePage() {
             }, 2000);
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
 
-            const isUserComingFromInstagramReferral = document.referrer.includes("instagram");
-            if (isUserComingFromInstagramReferral) {
-                const url = window.location.href.replace("https://www.fashionandstyle.com", "fashionandstyle://")
-                window.location = url;
+            // const isUserComingFromInstagramReferral = document.referrer.includes("instagram");
+            // if (isUserComingFromInstagramReferral) {
+            const url = window.location.href.replace("https://www.fashionandstyle.com", "fashionandstyle://")
 
-                setTimeout(function () {
-                    // wait a second and then to go App Store or your Website
-                    // if the user hasn't installed yet.
-                    window.location = "https://apps.apple.com/app/id1620312420";
-                }, 1000);
-            }
+            alert(url);
+            window.location = url;
+
+            setTimeout(function () {
+                // wait a second and then to go App Store or your Website
+                // if the user hasn't installed yet.
+                window.location = "https://apps.apple.com/app/id1620312420";
+            }, 1000);
+
 
             // iOS 사용자일 경우 딥링크를 시도하고, 앱 스토어로 리다이렉트
             // const iframe = document.createElement("iframe");
