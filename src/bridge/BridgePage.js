@@ -100,7 +100,7 @@ function BridgePage() {
         window.addEventListener('load', handleLoad);
 
         // Clean-up 함수: 컴포넌트가 언마운트될 때 이벤트 리스너를 제거
-        return () => window.removeEventListener('load', handleLoad);
+        //return () => window.removeEventListener('load', handleLoad);
 
     }, []);
 
