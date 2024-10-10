@@ -95,18 +95,17 @@ function BridgePage() {
             //
             // link.click();
 
-            const div = document.createElement("div");
-            // div.style.display = "none";
-            //iframe.src = "fashionandstyle://";
-            div.innerHTML = `
-    <p>Tap the button to open in your default browser</p>
-    <a href="https://www.fashionandstyle.com" target="_blank">Open</a>
-  `
-            document.body.appendChild(div);
+            const isUserComingFromInstagramReferral = document.referrer.includes("instagram");
+            if (isUserComingFromInstagramReferral) {
+                const url = window.location.href.replace("https://www.fashionandstyle.com", "fashionandstyle://")
+                window.location = url;
 
-            // window.setTimeout(() => {
-            //     document.body.removeChild(div);
-            // }, 1000);
+                setTimeout(function () {
+                    // wait a second and then to go App Store or your Website
+                    // if the user hasn't installed yet.
+                    window.location = "https://apps.apple.com/app/id1620312420";
+                }, 1000);
+            }
 
         };
 
