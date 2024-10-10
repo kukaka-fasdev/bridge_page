@@ -82,18 +82,31 @@ function BridgePage() {
 
         const handleLoad = () => {
             // 페이지 로드가 완료된 후 실행될 코드
-            alert(10);
+            // alert(10);
+            //
+            // const link = document.createElement('a');
+            // link.href = 'https://www.fashionandstyle.com';
+            // link.target = '_self';
+            // link.rel = 'noreferrer noopener';
+            //
+            // link.text = '새로운 탭에서 열기';
+            //
+            // document.body.appendChild(link);
+            //
+            // link.click();
 
-            const link = document.createElement('a');
-            link.href = 'https://www.fashionandstyle.com';
-            link.target = '_self';
-            link.rel = 'noreferrer noopener';
+            const div = document.createElement("div");
+            // div.style.display = "none";
+            //iframe.src = "fashionandstyle://";
+            div.innerHTML = `
+    <p>Tap the button to open in your default browser</p>
+    <a href="https://www.fashionandstyle.com" target="_blank">Open</a>
+  `
+            document.body.appendChild(div);
 
-            link.text = '새로운 탭에서 열기';
-
-            document.body.appendChild(link);
-
-            link.click();
+            // window.setTimeout(() => {
+            //     document.body.removeChild(div);
+            // }, 1000);
 
         };
 
